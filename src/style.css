@@ -3,12 +3,21 @@
 	padding: 0;
 }
 
+html {
+	height: 100%;
+}
+
 body {
   overflow: hidden;
+	height: 100%;
+}
+
+div#app {
+	height: 100%;
 }
 
 main {
-  height: 100vh;
+  height: 100%;
 	position: relative;
 	background-color: black;
 }

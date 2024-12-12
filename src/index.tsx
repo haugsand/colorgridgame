@@ -4,8 +4,9 @@ import { interpolate, samples, formatHex, clampChroma } from "culori";
 
 import "./style.css";
 
-const WIDTH = 7;
-const HEIGHT = 5;
+
+const WIDTH = 5;
+const HEIGHT = 6;
 
 const FIXED_POSITIONS = [
   0,
@@ -24,7 +25,7 @@ export function App() {
   const chromaCenter = (chromaStart + chromaEnd) / 2;
 
   const hueStart = 260;
-  const hueEnd = 330;
+  const hueEnd = 350;
   const hueCenter = (hueStart + hueEnd) / 2;
 
   const topleft = `oklch(${lightnessStart}% ${chromaStart} ${hueStart})`;
