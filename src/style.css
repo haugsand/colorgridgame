@@ -18,14 +18,13 @@ div#app {
 
 main {
   height: 100%;
-	position: relative;
 	background-color: black;
+	display: grid;
 }
 
 button {
  border: 0;
- position: absolute;
-
+ display: block;
 }
 
 button:not([disabled]):hover {
@@ -39,6 +38,10 @@ button[aria-pressed=true] {
   animation-direction: alternate;
 	animation-timing-function: ease-in-out;
 	z-index: 3;
+}
+
+button[disabled] {
+	position: relative;
 }
 
 
@@ -88,4 +91,9 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+canvas {
+	position: absolute;
+	left: -100%;
 }
